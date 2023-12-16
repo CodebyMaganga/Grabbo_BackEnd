@@ -17,7 +17,7 @@ def event():
 
 @app.post('/items')
 def create_event(item: ItemSchema):
-    print(item)
+    print(item) 
     return {"Events Created Succesfully"}
 
 @app.patch('/items/{item_id}')
