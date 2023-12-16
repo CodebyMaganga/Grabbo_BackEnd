@@ -9,8 +9,8 @@ class Item(Base):
     __tablename__ = 'items'
 
     id = Column(Integer(), primary_key=True)
-    name = Column(String())
-    price = Column(String())
-    rating = Column(String())
-    category = Column(String())
+    name = Column(String(), nullable=False)
+    price = Column(String(), nullable=False)
+    rating = Column(String(), nullable=False)
+    category = Column(String(), nullable=False)
  
